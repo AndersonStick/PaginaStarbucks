@@ -267,13 +267,13 @@
                 <img src="img/cafe_sin_salsa_sin_fondo.png" alt="">
             </div>
             <div class="opcion item3">
-                <img src="img/curubuya_sin_fondo.png" alt="">
+                <img src="img/maracuya_sin_fondo.png" alt="">
                 <div class="base"></div>
             </div>
         </div>
 
         <div class="mitad-marron"></div>
-        <img src="img/maracuya_sin_fondo.png" alt="" class="foto-principal">
+        <img src="img/Curubuya-Oreo_sin_fondo_heic.png" alt="" class="foto-principal">
     </section>
 
     <!-- JavaScript para mostrar/ocultar secciones -->
@@ -288,19 +288,29 @@
             // Mostrar la sección seleccionada
             var selectedSection = document.getElementById(sectionId);
             if (selectedSection) {
-                selectedSection.style.display = 'block';
+                selectedSection.style.display = 'flex';
             }
         }
 
-        function cerrarSegundaPantalla() {
-        // Ocultar la segunda pantalla
-        var segundaPantalla = document.querySelector('.info');
-        segundaPantalla.style.display = 'none';
+    //     function cerrarSegundaPantalla() {
+    //     // Ocultar la segunda pantalla
+    //     var segundaPantalla = document.querySelector('.info');
+    //     segundaPantalla.style.display = 'none';
 
-        // Mostrar la primera pantalla
-        var primeraPantalla = document.querySelector('.intro');
-        primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
-    }
+    //     // Mostrar la primera pantalla
+    //     var primeraPantalla = document.querySelector('.intro');
+    //     primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
+    // }
+
+        function cerrarSegundaPantalla() {
+            // Ocultar la segunda pantalla
+            var segundaPantalla = document.querySelector('.info');
+            segundaPantalla.style.display = 'none';
+
+            // Mostrar la primera pantalla
+            var primeraPantalla = document.querySelector('.intro');
+            primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
+        }
     </script>
 
 </body>
