@@ -26,9 +26,9 @@
         <header>
             <a href="#" onclick="showSection('store-section')"><i class="fa-solid fa-store"></i></a>
             <a href="#" onclick="showSection('postres-section')">POSTRES</a>
-            <a href="#" onclick="showSection('tea-section')">SALSAS</a>
-            <a href="#" onclick="showSection('gifts-section')">MOMENTOS</a>
-            <a href="#" onclick="showSection('locations-section')">PIDE EL TUYO</a>
+            <a href="#" onclick="showSection('salsas-section')">SALSAS</a>
+            <a href="#" onclick="showSection('momentos-section')">MOMENTOS</a>
+            <a href="#" onclick="showSection('pide_el_tuyo-section')">PIDE EL TUYO</a>
         </header>
     
         <section id="store-section" class="content-section">
@@ -70,44 +70,188 @@
 
                     <div class="items">
                         <div class="opcion item1">
-                        <img src="img/opcion1.png" alt="">
+                        <img src="img/durazno_queso_sin_fondo.png" alt="">
                         <div class="base"></div>
                         </div>
                         <div class="opcion item2">
                             <div class="base"></div>
-                            <img src="img/opcion2.png" alt="">
+                            <img src="img/maracuya_sin_fondo.png" alt="">
                         </div>
                         <div class="opcion item3">
-                            <img src="img/opcion3.png" alt="">
+                            <img src="img/curubuya_sin_fondo.png" alt="">
                             <div class="base"></div>
                         </div>
                     </div>
 
                     <div class="mitad-marron"></div>
-                    <img src="img/foto-principal.png" alt="" class="foto-principal">
+                    <img src="img/cafe_con_salsa_sin_fondo.png" alt="" class="foto-principal">
                 </section>
             <!-- ... -->
         </section>
     
-        <section id="tea-section" class="content-section" style="display:none;">
+        <section id="salsas-section" class="content-section" style="display:none;">
             <!-- Contenido de la sección "Té" -->
+            <!-- primera pantalla -->
+            <section class="intro">
+                <div class="contenido">
+                    <span class="txt texto1">Se esta preparando</span>
+                    <span class="txt texto2">Listo! A disfrutar!</span>
+                    <div class="barra">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- segunda pantalla -->
+            <section class="info">
+                <header>
+                    <a href="index.html"><i class="fa-solid fa-store"></i></a>
+                    <a href="#">POSTRES</a>
+                    <a href="#">SALSAS</a>
+                    <a href="#">MOMENTOS</a>
+                    <a href="#">PIDE EL TUYO</a>
+                    <a href="index.html" class="cerrar-btn" onclick="cerrarSegundaPantalla()">X</a>
+                </header>
+                
+                
+                <div class="texto">
+                    <h3>Pide tu</h3>
+                    <h1>Frappuccino!</h1>
+            
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
+                </div>
+
+
+                <div class="items">
+                    <div class="opcion item1">
+                    <img src="img/opcion1.png" alt="">
+                    <div class="base"></div>
+                    </div>
+                    <div class="opcion item2">
+                        <div class="base"></div>
+                        <img src="img/opcion2.png" alt="">
+                    </div>
+                    <div class="opcion item3">
+                        <img src="img/opcion3.png" alt="">
+                        <div class="base"></div>
+                    </div>
+                </div>
+
+                <div class="mitad-marron"></div>
+                <img src="img/foto-principal.png" alt="" class="foto-principal">
+            </section>
             <!-- ... -->
         </section>
     
-        <section id="gifts-section" class="content-section" style="display:none;">
-            <!-- Contenido de la sección "Regalos" -->
+        <section id="momentos-section" class="content-section" style="display:none;">
+            <!-- Contenido de la sección "Momentos" -->
+            <!-- primera pantalla -->
+            <section class="intro">
+                <div class="contenido">
+                    <span class="txt texto1">Se esta preparando</span>
+                    <span class="txt texto2">Listo! A disfrutar!</span>
+                    <div class="barra">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- segunda pantalla -->
+            <section class="info">
+                <header>
+                    <a href="index.html"><i class="fa-solid fa-store"></i></a>
+                    <a href="#">POSTRES</a>
+                    <a href="#">SALSAS</a>
+                    <a href="#">MOMENTOS</a>
+                    <a href="#">PIDE EL TUYO</a>
+                    <a href="index.html" class="cerrar-btn" onclick="cerrarSegundaPantalla()">X</a>
+                </header>
+                
+                
+                <div class="texto">
+                    <h3>Pide tu</h3>
+                    <h1>Frappuccino!</h1>
+            
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
+                </div>
+
+
+                <div class="items">
+                    <div class="opcion item1">
+                    <img src="img/opcion1.png" alt="">
+                    <div class="base"></div>
+                    </div>
+                    <div class="opcion item2">
+                        <div class="base"></div>
+                        <img src="img/opcion2.png" alt="">
+                    </div>
+                    <div class="opcion item3">
+                        <img src="img/opcion3.png" alt="">
+                        <div class="base"></div>
+                    </div>
+                </div>
+
+                <div class="mitad-marron"></div>
+                <img src="img/foto-principal.png" alt="" class="foto-principal">
+            </section>
             <!-- ... -->
         </section>
     
-        <section id="locations-section" class="content-section" style="display:none;">
-            <!-- Contenido de la sección "Locales" -->
+        <section id="pide_el_tuyo-section" class="content-section" style="display:none;">
+            <!-- Contenido de la sección "Pide el tuyo" -->
+            <!-- primera pantalla -->
+            <section class="intro">
+                <div class="contenido">
+                    <span class="txt texto1">Se esta preparando</span>
+                    <span class="txt texto2">Listo! A disfrutar!</span>
+                    <div class="barra">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- segunda pantalla -->
+            <section class="info">
+                <header>
+                    <a href="index.html"><i class="fa-solid fa-store"></i></a>
+                    <a href="#">POSTRES</a>
+                    <a href="#">SALSAS</a>
+                    <a href="#">MOMENTOS</a>
+                    <a href="#">PIDE EL TUYO</a>
+                    <a href="index.html" class="cerrar-btn" onclick="cerrarSegundaPantalla()">X</a>
+                </header>
+                
+                
+                <div class="texto">
+                    <h3>Pide tu</h3>
+                    <h1>Frappuccino!</h1>
+            
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
+                </div>
+
+
+                <div class="items">
+                    <div class="opcion item1">
+                    <img src="img/opcion1.png" alt="">
+                    <div class="base"></div>
+                    </div>
+                    <div class="opcion item2">
+                        <div class="base"></div>
+                        <img src="img/opcion2.png" alt="">
+                    </div>
+                    <div class="opcion item3">
+                        <img src="img/opcion3.png" alt="">
+                        <div class="base"></div>
+                    </div>
+                </div>
+
+                <div class="mitad-marron"></div>
+                <img src="img/foto-principal.png" alt="" class="foto-principal">
+            </section>
             <!-- ... -->
         </section>
         
         
         <div class="texto">
-            <h3>Pide tu</h3>
-            <h1>Frappuccino!</h1>
+            <h3 style="margin-bottom: 10px;">Más que un</h3>
+            <h1 style="margin-bottom: 20px;">Postre</h1>
     
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
         </div>
@@ -115,21 +259,21 @@
 
         <div class="items">
             <div class="opcion item1">
-               <img src="img/opcion1.png" alt="">
-               <div class="base"></div>
+            <img src="img/durazno_queso_sin_fondo.png" alt="">
+            <div class="base"></div>
             </div>
             <div class="opcion item2">
                 <div class="base"></div>
-                <img src="img/opcion2.png" alt="">
+                <img src="img/cafe_sin_salsa_sin_fondo.png" alt="">
             </div>
             <div class="opcion item3">
-                <img src="img/opcion3.png" alt="">
+                <img src="img/curubuya_sin_fondo.png" alt="">
                 <div class="base"></div>
-             </div>
+            </div>
         </div>
 
         <div class="mitad-marron"></div>
-        <img src="img/foto-principal.png" alt="" class="foto-principal">
+        <img src="img/maracuya_sin_fondo.png" alt="" class="foto-principal">
     </section>
 
     <!-- JavaScript para mostrar/ocultar secciones -->
