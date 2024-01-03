@@ -24,12 +24,86 @@
     <!-- segunda pantalla -->
     <section class="info">
         <header>
-            <a href="#"><i class="fa-solid fa-store"></i></a>
-            <a href="#">COFFE</a>
-            <a href="#">TE</a>
-            <a href="#">REGALOS</a>
-            <a href="#">LOCALES</a>
+            <a href="#" onclick="showSection('store-section')"><i class="fa-solid fa-store"></i></a>
+            <a href="#" onclick="showSection('postres-section')">POSTRES</a>
+            <a href="#" onclick="showSection('tea-section')">SALSAS</a>
+            <a href="#" onclick="showSection('gifts-section')">MOMENTOS</a>
+            <a href="#" onclick="showSection('locations-section')">PIDE EL TUYO</a>
         </header>
+    
+        <section id="store-section" class="content-section">
+            <!-- Contenido de la sección "Tienda" -->
+            <!-- ... -->
+        </section>
+        
+        <section id="postres-section" class="content-section" style="display:none;">
+            <!-- Contenido de la sección "POSTRES" -->
+            <!-- primera pantalla -->
+                <section class="intro">
+                    <div class="contenido">
+                        <span class="txt texto1">Se esta preparando</span>
+                        <span class="txt texto2">Listo! A disfrutar!</span>
+                        <div class="barra">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- segunda pantalla -->
+                <section class="info">
+                    <header>
+                        <a href="index.html"><i class="fa-solid fa-store"></i></a>
+                        <a href="#">POSTRES</a>
+                        <a href="#">SALSAS</a>
+                        <a href="#">MOMENTOS</a>
+                        <a href="#">PIDE EL TUYO</a>
+                        <a href="index.html" class="cerrar-btn" onclick="cerrarSegundaPantalla()">X</a>
+                    </header>
+                    
+                    
+                    <div class="texto">
+                        <h3>Pide tu</h3>
+                        <h1>Frappuccino!</h1>
+                
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
+                    </div>
+
+
+                    <div class="items">
+                        <div class="opcion item1">
+                        <img src="img/opcion1.png" alt="">
+                        <div class="base"></div>
+                        </div>
+                        <div class="opcion item2">
+                            <div class="base"></div>
+                            <img src="img/opcion2.png" alt="">
+                        </div>
+                        <div class="opcion item3">
+                            <img src="img/opcion3.png" alt="">
+                            <div class="base"></div>
+                        </div>
+                    </div>
+
+                    <div class="mitad-marron"></div>
+                    <img src="img/foto-principal.png" alt="" class="foto-principal">
+                </section>
+            <!-- ... -->
+        </section>
+    
+        <section id="tea-section" class="content-section" style="display:none;">
+            <!-- Contenido de la sección "Té" -->
+            <!-- ... -->
+        </section>
+    
+        <section id="gifts-section" class="content-section" style="display:none;">
+            <!-- Contenido de la sección "Regalos" -->
+            <!-- ... -->
+        </section>
+    
+        <section id="locations-section" class="content-section" style="display:none;">
+            <!-- Contenido de la sección "Locales" -->
+            <!-- ... -->
+        </section>
+        
         
         <div class="texto">
             <h3>Pide tu</h3>
@@ -57,5 +131,33 @@
         <div class="mitad-marron"></div>
         <img src="img/foto-principal.png" alt="" class="foto-principal">
     </section>
+
+    <!-- JavaScript para mostrar/ocultar secciones -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Mostrar la sección seleccionada
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        function cerrarSegundaPantalla() {
+        // Ocultar la segunda pantalla
+        var segundaPantalla = document.querySelector('.info');
+        segundaPantalla.style.display = 'none';
+
+        // Mostrar la primera pantalla
+        var primeraPantalla = document.querySelector('.intro');
+        primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
+    }
+    </script>
+
 </body>
 </html>

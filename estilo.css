@@ -319,3 +319,20 @@ section{
     }
 }
 
+
+
+/* Agregar esto al final de tu archivo CSS existente */
+
+/* .cerrar-btn { */
+    /* position: absolute;
+    top: 10px;
+    right: 10px; */
+    /* font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cerrar-btn:hover {
+    color: #34b78b;
+} */
