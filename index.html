@@ -25,11 +25,20 @@
     <section class="info">
         <header>
             <a href="#" onclick="showSection('store-section')"><i class="fa-solid fa-store"></i></a>
-            <a href="#" onclick="showSection('postres-section')">POSTRES</a>
-            <a href="#" onclick="showSection('salsas-section')">SALSAS</a>
-            <a href="#" onclick="showSection('momentos-section')">MOMENTOS</a>
-            <a href="#" onclick="showSection('pide_el_tuyo-section')">PIDE EL TUYO</a>
+            <a href="postres.html">POSTRES</a>
+            <a href="salsas.html" onclick="showSection('salsas-section')">SALSAS</a>
+            <a href="momentos.html" onclick="showSection('momentos-section')">MOMENTOS</a>
+            <a href="contacto.html" onclick="showSection('pide_el_tuyo-section')">PIDE EL TUYO</a>
+
+            <script>
+                function showSection(sectionId) {
+                    // Redirigir a postres.html
+                    window.location.href = 'postres.html';
+                }
+            </script>
         </header>
+
+        
     
         <div class="texto">
             <h3 style="margin-bottom: 10px;">Más que un</h3>
@@ -58,6 +67,7 @@
         <img src="img/maracuya_sin_fondo.png" alt="" class="foto-principal">
     </section>
 
+    
     
     <!-- JavaScript para mostrar/ocultar secciones -->
     <script>
