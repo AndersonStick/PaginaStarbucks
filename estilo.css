@@ -17,6 +17,16 @@ section{
     padding: 45px;
     z-index: 5;
 }
+
+
+section-one{
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 30px;
+    /* padding: 45px; */
+    z-index: 5;
+}
 /* PRIMERA PANTALLA */
 .intro{
     background-color: #fff;
