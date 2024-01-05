@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background: linear-gradient(to right,#148657, #34b78b);
+    background: linear-gradient(to right,#ff9092af, #ff989a69);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ section-one{
 .intro .barra .progreso{
     height: 7px;
     width: 0%;
-    background: #34b78b;
+    background: #FF9394;
     animation: 1.6s avanzar forwards linear;
     animation-delay: .3s;
 }
@@ -108,7 +108,7 @@ section-one{
 
 /* SEGUNDA PANTALLA */
 .info{
-    background: #016542;
+    background: #FF9394;
     /* z-index:5 para diseñar la info */
     /* z-index: 0; */
     /* z-index -0 para ejecutar completo */
@@ -150,7 +150,7 @@ section-one{
     transition: .3s;
 }
 .info header a:hover{
-    background-color: #34b78b;
+    background-color: #ff7d7f;
 }
 .info header a i{
     font-size: 30px;
@@ -205,7 +205,7 @@ section-one{
 }
 .items .opcion .base{
     position: absolute;
-    background-color: #016542;
+    background-color: #FF9394;
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100px;
