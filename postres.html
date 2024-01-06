@@ -11,13 +11,45 @@
     <title>Postres</title>
 </head>
 <body>
+    <button onclick="volverAPrimerPantalla()">Volver a la primera pantalla</button>
     <h1>Página de Postres</h1>
+    
 
     <!-- Contenido de la página de postres -->
 
     <!-- Incluir tu script JavaScript si es necesario -->
+    <!-- JavaScript para mostrar/ocultar secciones -->
     <script>
-        // Puedes agregar scripts adicionales aquí si es necesario
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Mostrar la sección seleccionada
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'flex';
+            }
+        }
+
+    //     function cerrarSegundaPantalla() {
+    //     // Ocultar la segunda pantalla
+    //     var segundaPantalla = document.querySelector('.info');
+    //     segundaPantalla.style.display = 'none';
+
+    //     // Mostrar la primera pantalla
+    //     var primeraPantalla = document.querySelector('.intro');
+    //     primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
+    // }
+
+        function cerrarSegundaPantalla() {
+            function volverAPrimerPantalla() {
+                // Redirigir al index.html
+                window.location.href = 'index.html';
+            }
+        }
     </script>
 </body>
 </html>

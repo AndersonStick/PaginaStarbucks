@@ -8,6 +8,7 @@
     <link rel="icon" href="img/dessorts_logo_solo_rosado.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
+    <!-- <script src="ruta/hacia/tu/script.js"></script> -->
     <title>Dessorts</title>
 </head>
 <body>
@@ -29,16 +30,7 @@
             <a href="salsas.html">SALSAS</a>
             <a href="momentos.html">MOMENTOS</a>
             <a href="contacto.html">PIDE EL TUYO</a>
-
-            <!-- <script>
-                function showSection(sectionId) {
-                    // Redirigir a postres.html
-                    window.location.href = 'postres.html';
-                }
-            </script> -->
         </header>
-
-        
     
         <div class="texto">
             <h3 style="margin-bottom: 10px;">Más que un</h3>
@@ -46,7 +38,6 @@
     
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
         </div>
-
 
         <div class="items">
             <div class="opcion item1">
@@ -67,8 +58,6 @@
         <img src="img/logo_negro_sin_letras_sin_fondo.png" alt="" class="foto-principal">
     </section>
 
-    
-    
     <!-- JavaScript para mostrar/ocultar secciones -->
     <script>
         function showSection(sectionId) {
@@ -84,17 +73,7 @@
                 selectedSection.style.display = 'flex';
             }
         }
-
-    //     function cerrarSegundaPantalla() {
-    //     // Ocultar la segunda pantalla
-    //     var segundaPantalla = document.querySelector('.info');
-    //     segundaPantalla.style.display = 'none';
-
-    //     // Mostrar la primera pantalla
-    //     var primeraPantalla = document.querySelector('.intro');
-    //     primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
-    // }
-
+        
         function cerrarSegundaPantalla() {
             // Ocultar la segunda pantalla
             var segundaPantalla = document.querySelector('.info');
@@ -104,7 +83,10 @@
             var primeraPantalla = document.querySelector('.intro');
             primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
         }
+        function volverAPrimerPantalla() {
+            // Redirigir al index.html
+            window.location.href = 'index.html';
+        }
     </script>
-
 </body>
 </html>
