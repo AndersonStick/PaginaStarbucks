@@ -113,7 +113,7 @@ section-one{
     /* z-index: 0; */
     /* z-index -0 para ejecutar completo */
     z-index: 0;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     overflow: hidden;
     font-family: 'Montserrat';
@@ -142,7 +142,7 @@ section-one{
 }
 .info header a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     margin-right: 30px;
     cursor: pointer;
     padding: 5px 10px;
