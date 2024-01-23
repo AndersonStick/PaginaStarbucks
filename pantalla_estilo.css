@@ -27,86 +27,7 @@ section-one{
     /* padding: 45px; */
     z-index: 5;
 }
-/* PRIMERA PANTALLA */
-.intro{
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    animation: 2.5s animInto forwards;
-}
-@keyframes animInto {
-    0%{visibility: visible;}
-    1%{visibility: visible;}
-    100%{visibility: hidden;}
-}
-
-.intro .contenido{
-    position: relative;
-    max-width: 300px;
-    width: 100%;
-    animation: .5s aparecer forwards;
-}
-@keyframes aparecer {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-.intro .barra{
-    height: 7px;
-    background: #ddd;
-    border-radius: 4px;
-    margin-top: 10px;
-    overflow: hidden;
-}
-.intro .barra .progreso{
-    height: 7px;
-    width: 0%;
-    background: #FF9394;
-    animation: 1.6s avanzar forwards linear;
-    animation-delay: .3s;
-}
-
-@keyframes avanzar {
-    0%{width: 0;}
-    40%{width: 50%;}
-    60%{width: 50%;}
-    100%{width: 100%;}
-}
-.txt{
-    font-family: 'Montserrat';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: -20px;
-    font-size: 22px;
-    color: #666;
-}
-.texto1{
-    animation: 0.8s animTexto forwards;
-    animation-delay: .3s;
-}
-@keyframes animTexto {
-    0%{opacity: 0;}
-    1%{opacity: 1;}
-    99%{opacity: 1;}
-    100%{opacity: 0;}
-}
-.texto2{
-    opacity: 0;
-    animation: 0.8s animTexto2 forwards;
-    animation-delay: 1.1s;
-}
-@keyframes animTexto2 {
-    0%{opacity: 0;}
-    1%{opacity: 1;}
-    100%{opacity: 1;}
-}
-
-
-
-
-/* SEGUNDA PANTALLA */
+/* PANTALLA PRINCIPAL */
 .info{
     background: #FF9394;
     /* z-index:5 para diseñar la info */
@@ -126,7 +47,7 @@ section-one{
     position: relative;
     animation: 1s header forwards;
     /* El siguiente delaly lo agregmos al final para */
-    animation-delay: 2.6s;
+    animation-delay: .5s;
     opacity: 0;
     z-index: 5;
 }
@@ -336,20 +257,3 @@ section-one{
     display: block;
     margin: 0 auto; /* Centra la imagen en el contenedor */
 }
-
-
-/* Agregar esto al final de tu archivo CSS existente */
-
-/* .cerrar-btn { */
-    /* position: absolute;
-    top: 10px;
-    right: 10px; */
-    /* font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.cerrar-btn:hover {
-    color: #34b78b;
-} */

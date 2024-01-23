@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="icon" href="img/taza-de-cafe.png" type="image/x-icon">
+    <link rel="icon" href="img/dessorts_logo_solo_rosado.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
-    <title>Frappucino Web</title>
+    <!-- <script src="ruta/hacia/tu/script.js"></script> -->
+    <title>Dessorts</title>
 </head>
 <body>
     <!-- primera pantalla -->
@@ -25,38 +26,68 @@
     <!-- segunda pantalla -->
     <section class="info">
         <header>
-            <a href="#"><i class="fa-solid fa-store"></i></a>
-            <a href="#">COFFE</a>
-            <a href="#">TE</a>
-            <a href="#">REGALOS</a>
-            <a href="#">LOCALES</a>
+            <a href="index.html"><i class="fa-solid fa-igloo"></i></a>
+            <a href="postres.html">POSTRES</a>
+            <a href="salsas.html">SALSAS</a>
+            <a href="momentos.html">MOMENTOS</a>
+            <a href="contacto.html">PIDE EL TUYO</a>
         </header>
-        
+    
         <div class="texto">
-            <h3>Pide tu</h3>
-            <h1>Frappuccino!</h1>
+            <h3 style="margin-bottom: 10px;">Más que un</h3>
+            <h1 style="margin-bottom: 20px;">Postre</h1>
     
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vero architecto, qui, dicta mollitia repellat.</p>
         </div>
 
-
         <div class="items">
             <div class="opcion item1">
-               <img src="img/opcion1.png" alt="">
-               <div class="base"></div>
+            <img src="img/durazno_queso_sin_fondo.png" alt="opcion 1">
+            <div class="base"></div>
             </div>
             <div class="opcion item2">
                 <div class="base"></div>
-                <img src="img/opcion2.png" alt="">
+                <img src="img/curubuya_sin_fondo1.png" alt="opcion 2">
             </div>
             <div class="opcion item3">
-                <img src="img/opcion3.png" alt="">
+                <img src="img/maracuya_sin_fondo_opcion_3.png" alt="opcion 3">
                 <div class="base"></div>
-             </div>
+            </div>
         </div>
 
         <div class="mitad-marron"></div>
-        <img src="img/foto-principal.png" alt="" class="foto-principal">
+        <img src="img/logo_combinado_sin_fondo.png" alt="foto-principal" class="foto-principal">
     </section>
+
+    <!-- JavaScript para mostrar/ocultar secciones -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Mostrar la sección seleccionada
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'flex';
+            }
+        }
+        
+        function cerrarSegundaPantalla() {
+            // Ocultar la segunda pantalla
+            var segundaPantalla = document.querySelector('.info');
+            segundaPantalla.style.display = 'none';
+
+            // Mostrar la primera pantalla
+            var primeraPantalla = document.querySelector('.intro');
+            primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
+        }
+        function volverAPrimerPantalla() {
+            // Redirigir al index.html
+            window.location.href = 'index.html';
+        }
+    </script>
 </body>
 </html>

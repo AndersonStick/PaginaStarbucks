@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="img/dessorts_logo_solo_rosado.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pantalla_estilo.css">
+    <title>Postres</title>
+</head>
+<body>
+
+    <section class="info">
+        <header>
+            <a href="index.html"><i class="fa-solid fa-igloo"></i></a>
+        </header>
+
+        <h1>Página de Postres</h1>
+    </section>    
+
+    
+
+    <!-- Contenido de la página de postres -->
+
+    <!-- Incluir tu script JavaScript si es necesario -->
+    <!-- JavaScript para mostrar/ocultar secciones -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Mostrar la sección seleccionada
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'flex';
+            }
+        }
+
+    //     function cerrarSegundaPantalla() {
+    //     // Ocultar la segunda pantalla
+    //     var segundaPantalla = document.querySelector('.info');
+    //     segundaPantalla.style.display = 'none';
+
+    //     // Mostrar la primera pantalla
+    //     var primeraPantalla = document.querySelector('.intro');
+    //     primeraPantalla.style.display = 'flex'; // o 'block' dependiendo de tu diseño
+    // }
+
+        function cerrarSegundaPantalla() {
+            function volverAPrimerPantalla() {
+                // Redirigir al index.html
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>
